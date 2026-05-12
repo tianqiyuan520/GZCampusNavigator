@@ -1,0 +1,1468 @@
+[gd_scene format=3 uid="uid://bdpe248tcni86"]
+
+[ext_resource type="Texture2D" uid="uid://wmalp1e141ch" path="res://Resources/bg.png" id="1_hpc76"]
+[ext_resource type="Script" uid="uid://bs02045knv7l7" path="res://Src/Scripts/MainScene.cs" id="1_tr2i4"]
+[ext_resource type="Script" uid="uid://d2div6wenueg0" path="res://Src/Scripts/LocationNode.cs" id="3_7rqgy"]
+[ext_resource type="Texture2D" uid="uid://hsd2eamsw74a" path="res://Resources/Pin.svg" id="3_nhkr4"]
+[ext_resource type="Texture2D" uid="uid://b38vaqnpw0q3g" path="res://Resources/search.svg" id="4_qxria"]
+[ext_resource type="Script" uid="uid://dmllsd1c2o8gr" path="res://Src/Scripts/EdgeNode.cs" id="4_y4jh7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y4jh7"]
+bg_color = Color(0.75538564, 0.75538623, 0.7553857, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tr2i4"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 56
+corner_radius_top_right = 56
+corner_radius_bottom_right = 56
+corner_radius_bottom_left = 56
+shadow_size = 14
+
+[sub_resource type="Theme" id="Theme_tr2i4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7rqgy"]
+bg_color = Color(0.9618141, 0.9618141, 0.9618141, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_color = Color(0.2147026, 0.21470255, 0.21470255, 0.6)
+shadow_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q68mp"]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f140w"]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 5
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y4jh7"]
+load_path = "res://.godot/imported/搜索.svg-c337d63726e5f603c66d6f3575ff07b2.ctex"
+
+[node name="MainScene" type="Node" unique_id=1646116829 node_paths=PackedStringArray("StartPosLineEdit", "EndPosLineEdit", "SearchButton", "InfoText", "StartPin", "EndPin")]
+script = ExtResource("1_tr2i4")
+StartPosLineEdit = NodePath("Panel2/StartPosLineEdit")
+EndPosLineEdit = NodePath("Panel2/EndPosLineEdit")
+SearchButton = NodePath("Panel2/SearchButton")
+InfoText = NodePath("Panel/InfoText")
+StartPin = NodePath("StartPin")
+EndPin = NodePath("EndPin")
+
+[node name="Panel3" type="Panel" parent="." unique_id=2060209803]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_y4jh7")
+
+[node name="BG" type="Panel" parent="." unique_id=12842786]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -274.08002
+offset_top = -319.0
+offset_right = 574.68005
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_styles/panel = SubResource("StyleBoxFlat_tr2i4")
+
+[node name="BG" type="TextureRect" parent="BG" unique_id=538410153]
+custom_minimum_size = Vector2(545.086, 412.25)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -374.84998
+offset_top = -283.5
+offset_right = 374.84998
+offset_bottom = 283.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("Theme_tr2i4")
+texture = ExtResource("1_hpc76")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_lock_ = true
+
+[node name="Location" type="Control" parent="." unique_id=1647100126]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 147.0
+offset_right = 147.0
+
+[node name="中大" type="Control" parent="Location" unique_id=1931642115]
+anchors_preset = 0
+offset_left = 686.0
+offset_top = 55.0
+offset_right = 709.0
+offset_bottom = 78.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/中大" unique_id=1445836767]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="广外" type="Control" parent="Location" unique_id=1196307358]
+anchors_preset = 0
+offset_left = 754.0
+offset_top = 151.0
+offset_right = 777.0
+offset_bottom = 174.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/广外" unique_id=1523563670]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="广中医" type="Control" parent="Location" unique_id=434351265]
+anchors_preset = 0
+offset_left = 868.0
+offset_top = 223.0
+offset_right = 891.0
+offset_bottom = 246.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/广中医" unique_id=1216339802]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="广药" type="Control" parent="Location" unique_id=1329524085]
+anchors_preset = 0
+offset_left = 915.0
+offset_top = 296.0
+offset_right = 938.0
+offset_bottom = 319.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/广药" unique_id=1117798389]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="华工" type="Control" parent="Location" unique_id=2013746916]
+anchors_preset = 0
+offset_left = 812.0
+offset_top = 459.0
+offset_right = 835.0
+offset_bottom = 482.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/华工" unique_id=1449115504]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="广工" type="Control" parent="Location" unique_id=203772166]
+anchors_preset = 0
+offset_left = 543.0
+offset_top = 530.0
+offset_right = 566.0
+offset_bottom = 553.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/广工" unique_id=2104065934]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="广美" type="Control" parent="Location" unique_id=19851773]
+anchors_preset = 0
+offset_left = 484.0
+offset_top = 513.0
+offset_right = 507.0
+offset_bottom = 536.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/广美" unique_id=1429738419]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="鲤鱼岗" type="Control" parent="Location" unique_id=1843595333]
+anchors_preset = 0
+offset_left = 494.0
+offset_top = 589.0
+offset_right = 517.0
+offset_bottom = 612.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/鲤鱼岗" unique_id=1429483235]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="广大" type="Control" parent="Location" unique_id=1815435197]
+anchors_preset = 0
+offset_left = 364.0
+offset_top = 362.0
+offset_right = 387.0
+offset_bottom = 385.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/广大" unique_id=627893638]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="华师" type="Control" parent="Location" unique_id=1243565605]
+anchors_preset = 0
+offset_left = 395.0
+offset_top = 279.0
+offset_right = 418.0
+offset_bottom = 302.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/华师" unique_id=1978485903]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="星海" type="Control" parent="Location" unique_id=152538572]
+anchors_preset = 0
+offset_left = 455.0
+offset_top = 219.0
+offset_right = 478.0
+offset_bottom = 242.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/星海" unique_id=2146296747]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="gogo新天地" type="Control" parent="Location" unique_id=1051422146]
+anchors_preset = 0
+offset_left = 660.0
+offset_top = 149.0
+offset_right = 683.0
+offset_bottom = 172.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/gogo新天地" unique_id=761747994]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="路口8" type="Control" parent="Location" unique_id=1905027792]
+anchors_preset = 0
+offset_left = 721.0
+offset_top = 203.0
+offset_right = 744.0
+offset_bottom = 226.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/路口8" unique_id=967162004]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="路口7" type="Control" parent="Location" unique_id=1966766783]
+anchors_preset = 0
+offset_left = 787.0
+offset_top = 270.0
+offset_right = 810.0
+offset_bottom = 293.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/路口7" unique_id=1323460573]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="路口6" type="Control" parent="Location" unique_id=907151260]
+anchors_preset = 0
+offset_left = 748.0
+offset_top = 396.0
+offset_right = 771.0
+offset_bottom = 419.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/路口6" unique_id=631973897]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="路口5" type="Control" parent="Location" unique_id=135917056]
+anchors_preset = 0
+offset_left = 536.0
+offset_top = 474.0
+offset_right = 559.0
+offset_bottom = 497.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/路口5" unique_id=1378242689]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="路口4" type="Control" parent="Location" unique_id=829905353]
+anchors_preset = 0
+offset_left = 484.0
+offset_top = 475.0
+offset_right = 507.0
+offset_bottom = 498.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/路口4" unique_id=1589914820]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="路口3" type="Control" parent="Location" unique_id=1381903112]
+anchors_preset = 0
+offset_left = 410.0
+offset_top = 399.0
+offset_right = 433.0
+offset_bottom = 422.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/路口3" unique_id=1807841740]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="路口2" type="Control" parent="Location" unique_id=640230519]
+anchors_preset = 0
+offset_left = 446.0
+offset_top = 374.0
+offset_right = 469.0
+offset_bottom = 397.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/路口2" unique_id=830400616]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="路口1" type="Control" parent="Location" unique_id=1291471638]
+anchors_preset = 0
+offset_left = 499.0
+offset_top = 261.0
+offset_right = 522.0
+offset_bottom = 284.0
+script = ExtResource("3_7rqgy")
+
+[node name="Button" type="Button" parent="Location/路口1" unique_id=314867860]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.5
+offset_top = -11.5
+offset_right = 11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Edge" type="Control" parent="." unique_id=291867054]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 147.0
+offset_right = 147.0
+metadata/_edit_use_anchors_ = true
+
+[node name="1" type="Control" parent="Edge" unique_id=287196910]
+anchors_preset = 0
+
+[node name="1" type="Control" parent="Edge/1" unique_id=2123967960 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 697.0
+offset_top = 65.0
+offset_right = 697.0
+offset_bottom = 65.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/中大")
+ToNode = NodePath("../../../Location/广外")
+
+[node name="Label" type="Label" parent="Edge/1/1" unique_id=576172544]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 31.0
+offset_right = 77.0
+offset_bottom = 54.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="Line2D" type="Line2D" parent="Edge/1/1" unique_id=1479737272]
+points = PackedVector2Array(7, 13, 22, 40, 38, 78, 58, 89)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="2" type="Control" parent="Edge/1" unique_id=1233725079 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 771.0
+offset_top = 156.0
+offset_right = 771.0
+offset_bottom = 156.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广外")
+ToNode = NodePath("../../../Location/广中医")
+
+[node name="Line2D" type="Line2D" parent="Edge/1/2" unique_id=1931403668]
+points = PackedVector2Array(7, 13, 35, 30, 72, 49, 98, 71)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/1/2" unique_id=1994143830]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="3" type="Control" parent="Edge/1" unique_id=1211985285 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 884.0
+offset_top = 232.0
+offset_right = 884.0
+offset_bottom = 232.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广中医")
+ToNode = NodePath("../../../Location/广药")
+
+[node name="Line2D" type="Line2D" parent="Edge/1/3" unique_id=291609529]
+points = PackedVector2Array(7, 13, 29, 30, 42, 45, 45, 60)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/1/3" unique_id=1270275689]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 14.0
+offset_right = 85.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="4" type="Control" parent="Edge/1" unique_id=1864973328 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 917.0
+offset_top = 308.0
+offset_right = 917.0
+offset_bottom = 308.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广药")
+ToNode = NodePath("../../../Location/华工")
+
+[node name="Line2D" type="Line2D" parent="Edge/1/4" unique_id=1394173868]
+points = PackedVector2Array(7, 13, -14, 62, -47, 103, -86, 151)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/1/4" unique_id=1825335504]
+layout_mode = 0
+offset_left = -18.0
+offset_top = 77.0
+offset_right = 22.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="5" type="Control" parent="Edge/1" unique_id=455697255 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 764.0
+offset_top = 462.0
+offset_right = 764.0
+offset_bottom = 462.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/华工")
+ToNode = NodePath("../../../Location/广工")
+
+[node name="Line2D" type="Line2D" parent="Edge/1/5" unique_id=1849264180]
+points = PackedVector2Array(55, 21, 3, 75, -18, 98, -72, 115, -110, 110, -196, 87)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/1/5" unique_id=1597530269]
+layout_mode = 0
+offset_left = -10.0
+offset_top = 98.0
+offset_right = 30.0
+offset_bottom = 121.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="6" type="Control" parent="Edge/1" unique_id=1310270161 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 502.0
+offset_top = 517.0
+offset_right = 502.0
+offset_bottom = 517.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广工")
+ToNode = NodePath("../../../Location/广美")
+
+[node name="Line2D" type="Line2D" parent="Edge/1/6" unique_id=1668127177]
+points = PackedVector2Array(7, 13, 38, 23)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/1/6" unique_id=1001261206]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 26.0
+offset_right = 43.0
+offset_bottom = 49.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="7" type="Control" parent="Edge/1" unique_id=1501834820 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 426.0
+offset_top = 500.0
+offset_right = 426.0
+offset_bottom = 500.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广美")
+ToNode = NodePath("../../../Location/广大")
+
+[node name="Line2D" type="Line2D" parent="Edge/1/7" unique_id=691658138]
+points = PackedVector2Array(55, 21, 15, 14, -163, 19, -192, -5, -192, -33, -134, -62, -97, -70, -69, -92, -56, -115)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+texture_mode = 1
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/1/7" unique_id=1096276059]
+layout_mode = 0
+offset_left = -100.0
+offset_top = 21.0
+offset_right = -60.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="8" type="Control" parent="Edge/1" unique_id=31106546 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 390.0
+offset_top = 289.0
+offset_right = 390.0
+offset_bottom = 289.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广大")
+ToNode = NodePath("../../../Location/华师")
+
+[node name="Line2D" type="Line2D" parent="Edge/1/8" unique_id=1679754544]
+points = PackedVector2Array(7, 13, -5, 39, -11, 70)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/1/8" unique_id=834094861]
+layout_mode = 0
+offset_left = -50.0
+offset_top = 14.0
+offset_right = -10.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="9" type="Control" parent="Edge/1" unique_id=962719825 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 448.0
+offset_top = 226.0
+offset_right = 448.0
+offset_bottom = 226.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/华师")
+ToNode = NodePath("../../../Location/星海")
+
+[node name="Line2D" type="Line2D" parent="Edge/1/9" unique_id=682589022]
+points = PackedVector2Array(7, 13, -24, 34, -36, 51)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/1/9" unique_id=1347213248]
+layout_mode = 0
+offset_left = -68.0
+offset_top = 6.0
+offset_right = -28.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="10" type="Control" parent="Edge/1" unique_id=1243386650 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 678.0
+offset_top = 46.0
+offset_right = 678.0
+offset_bottom = 46.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/星海")
+ToNode = NodePath("../../../Location/中大")
+
+[node name="Line2D" type="Line2D" parent="Edge/1/10" unique_id=328022128]
+points = PackedVector2Array(7, 13, -28, 11, -86, 35, -132, 99, -159, 138, -201, 175)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/1/10" unique_id=1256613931]
+layout_mode = 0
+offset_left = -172.0
+offset_top = 27.0
+offset_right = -132.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="2" type="Control" parent="Edge" unique_id=1002514445]
+anchors_preset = 0
+
+[node name="1" type="Control" parent="Edge/2" unique_id=1195827240 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 662.0
+offset_top = 132.0
+offset_right = 662.0
+offset_bottom = 132.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/中大")
+ToNode = NodePath("../../../Location/gogo新天地")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/1" unique_id=1711094206]
+points = PackedVector2Array(7, 14, 7, -24, 25, -55)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/1" unique_id=1114189591]
+layout_mode = 0
+offset_left = -50.0
+offset_top = -36.0
+offset_right = -10.0
+offset_bottom = -13.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="2" type="Control" parent="Edge/2" unique_id=686824117 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 734.0
+offset_top = 188.0
+offset_right = 734.0
+offset_bottom = 188.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广外")
+ToNode = NodePath("../../../Location/路口8")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/2" unique_id=428683108]
+points = PackedVector2Array(7, 14, 16, -1, 24, -13)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/2" unique_id=801995010]
+layout_mode = 0
+offset_left = 20.0
+offset_right = 60.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="3" type="Control" parent="Edge/2" unique_id=1671839238 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 802.0
+offset_top = 257.0
+offset_right = 802.0
+offset_bottom = 257.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广中医")
+ToNode = NodePath("../../../Location/路口7")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/3" unique_id=1577381340]
+points = PackedVector2Array(7, 14, 68, -11)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/3" unique_id=28753480]
+layout_mode = 0
+offset_left = -6.0
+offset_top = -31.0
+offset_right = 34.0
+offset_bottom = -8.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="4" type="Control" parent="Edge/2" unique_id=463023302 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 805.0
+offset_top = 272.0
+offset_right = 805.0
+offset_bottom = 272.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广药")
+ToNode = NodePath("../../../Location/路口7")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/4" unique_id=746121326]
+points = PackedVector2Array(7, 14, 108, 31)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/4" unique_id=1256130764]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 24.0
+offset_right = 61.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="5" type="Control" parent="Edge/2" unique_id=229135904 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 764.0
+offset_top = 402.0
+offset_right = 764.0
+offset_bottom = 402.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/华工")
+ToNode = NodePath("../../../Location/路口6")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/5" unique_id=879985146]
+points = PackedVector2Array(7, 14, 50, 58)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/5" unique_id=651975341]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 9.0
+offset_right = 72.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="6" type="Control" parent="Edge/2" unique_id=583544720 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 543.0
+offset_top = 485.0
+offset_right = 543.0
+offset_bottom = 485.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广工")
+ToNode = NodePath("../../../Location/路口5")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/6" unique_id=1857848921]
+points = PackedVector2Array(7, 13, 11, 43)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/6" unique_id=1815246271]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 17.0
+offset_right = 60.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="7" type="Control" parent="Edge/2" unique_id=684063165 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 489.0
+offset_top = 487.0
+offset_right = 489.0
+offset_bottom = 487.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广美")
+ToNode = NodePath("../../../Location/路口4")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/7" unique_id=1818838568]
+points = PackedVector2Array(7, 14, 7, 23)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/7" unique_id=561966302]
+layout_mode = 0
+offset_left = -29.0
+offset_top = 4.0
+offset_right = 11.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="8" type="Control" parent="Edge/2" unique_id=1550593720 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 407.0
+offset_top = 385.0
+offset_right = 407.0
+offset_bottom = 385.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/广大")
+ToNode = NodePath("../../../Location/路口3")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/8" unique_id=839611442]
+points = PackedVector2Array(7, 14, -9, 0, -18, -6)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/8" unique_id=222847297]
+layout_mode = 0
+offset_left = -17.0
+offset_top = -27.0
+offset_right = 23.0
+offset_bottom = -4.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="9" type="Control" parent="Edge/2" unique_id=312485488 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 414.0
+offset_top = 284.0
+offset_right = 414.0
+offset_bottom = 284.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/华师")
+ToNode = NodePath("../../../Location/路口2")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/9" unique_id=915421589]
+points = PackedVector2Array(7, 13, 29, 25, 44, 55, 41, 89)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/9" unique_id=744791164]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 9.0
+offset_right = 75.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="10" type="Control" parent="Edge/2" unique_id=1031747183 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 491.0
+offset_top = 254.0
+offset_right = 491.0
+offset_bottom = 254.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/星海")
+ToNode = NodePath("../../../Location/路口1")
+
+[node name="Line2D" type="Line2D" parent="Edge/2/10" unique_id=35868193]
+points = PackedVector2Array(7, 14, -9, 0, -17, -10)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/2/10" unique_id=1709855922]
+layout_mode = 0
+offset_left = -7.0
+offset_top = -22.0
+offset_right = 33.0
+offset_bottom = 1.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="3" type="Control" parent="Edge" unique_id=1449475060]
+anchors_preset = 0
+
+[node name="1" type="Control" parent="Edge/3" unique_id=2074437452 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 489.0
+offset_top = 210.0
+offset_right = 489.0
+offset_bottom = 210.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/gogo新天地")
+ToNode = NodePath("../../../Location/路口8")
+
+[node name="Line2D" type="Line2D" parent="Edge/3/1" unique_id=1559665185]
+points = PackedVector2Array(233, -6, 226, -17, 213, -34, 195, -43)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/3/1" unique_id=707850901]
+layout_mode = 0
+offset_left = 203.0
+offset_top = -60.0
+offset_right = 243.0
+offset_bottom = -37.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="2" type="Control" parent="Edge/3" unique_id=530175035 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 545.0
+offset_top = 270.0
+offset_right = 545.0
+offset_bottom = 270.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/路口8")
+ToNode = NodePath("../../../Location/路口7")
+
+[node name="Line2D" type="Line2D" parent="Edge/3/2" unique_id=419973172]
+points = PackedVector2Array(242, 0, 229, -18, 210, -32, 196, -43)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/3/2" unique_id=441893613]
+layout_mode = 0
+offset_left = 182.0
+offset_top = -30.0
+offset_right = 222.0
+offset_bottom = -7.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="3" type="Control" parent="Edge/3" unique_id=1468401618 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 595.0
+offset_top = 337.0
+offset_right = 595.0
+offset_bottom = 337.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/路口7")
+ToNode = NodePath("../../../Location/路口6")
+
+[node name="Line2D" type="Line2D" parent="Edge/3/3" unique_id=619950436]
+points = PackedVector2Array(171, 55, 182, 9, 192, -21, 196, -43)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/3/3" unique_id=1924100270]
+layout_mode = 0
+offset_left = 141.0
+offset_top = -11.0
+offset_right = 181.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="4" type="Control" parent="Edge/3" unique_id=1004618407 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 559.0
+offset_top = 462.0
+offset_right = 559.0
+offset_bottom = 462.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/路口6")
+ToNode = NodePath("../../../Location/路口5")
+
+[node name="Line2D" type="Line2D" parent="Edge/3/4" unique_id=222197851]
+points = PackedVector2Array(2, 15, 23, 9, 51, 4, 89, 3, 151, 1, 180, -25, 196, -42)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/3/4" unique_id=367637216]
+layout_mode = 0
+offset_left = 53.0
+offset_top = -20.0
+offset_right = 93.0
+offset_bottom = 3.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="5" type="Control" parent="Edge/3" unique_id=1476715400 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 504.0
+offset_top = 475.0
+offset_right = 504.0
+offset_bottom = 475.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/路口5")
+ToNode = NodePath("../../../Location/路口4")
+
+[node name="Line2D" type="Line2D" parent="Edge/3/5" unique_id=1103369602]
+points = PackedVector2Array(6, 14, 30, 16)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/3/5" unique_id=860049216]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -10.0
+offset_right = 43.0
+offset_bottom = 13.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="6" type="Control" parent="Edge/3" unique_id=1897891701 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 404.0
+offset_top = 406.0
+offset_right = 404.0
+offset_bottom = 406.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/路口4")
+ToNode = NodePath("../../../Location/路口3")
+
+[node name="Line2D" type="Line2D" parent="Edge/3/6" unique_id=1347020523]
+points = PackedVector2Array(7, 14, -13, 31, -14, 57, 2, 72, 35, 79, 77, 80)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/3/6" unique_id=363878576]
+layout_mode = 0
+offset_top = 43.0
+offset_right = 40.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="7" type="Control" parent="Edge/3" unique_id=523807854 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 427.0
+offset_top = 388.0
+offset_right = 427.0
+offset_bottom = 388.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/路口3")
+ToNode = NodePath("../../../Location/路口2")
+
+[node name="Line2D" type="Line2D" parent="Edge/3/7" unique_id=777696158]
+points = PackedVector2Array(6, 14, 17, 5)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/3/7" unique_id=839379590]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 50.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="8" type="Control" parent="Edge/3" unique_id=1412673291 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 469.0
+offset_top = 369.0
+offset_right = 469.0
+offset_bottom = 369.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/路口2")
+ToNode = NodePath("../../../Location/路口1")
+
+[node name="Line2D" type="Line2D" parent="Edge/3/8" unique_id=93493392]
+points = PackedVector2Array(2, 15, 33, -4, 44, -33, 42, -81)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/3/8" unique_id=201491424]
+layout_mode = 0
+offset_left = 45.0
+offset_top = -32.0
+offset_right = 85.0
+offset_bottom = -9.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="9" type="Control" parent="Edge/3" unique_id=303682195 node_paths=PackedStringArray("FromNode", "ToNode")]
+anchors_preset = 0
+offset_left = 517.0
+offset_top = 246.0
+offset_right = 517.0
+offset_bottom = 246.0
+script = ExtResource("4_y4jh7")
+FromNode = NodePath("../../../Location/路口1")
+ToNode = NodePath("../../../Location/gogo新天地")
+
+[node name="Line2D" type="Line2D" parent="Edge/3/9" unique_id=1819582254]
+points = PackedVector2Array(2, 15, 22, -9, 44, -33, 85, -69, 116, -88, 141, -87)
+width = 5.35
+default_color = Color(0.9073763, 0.00010550261, 0.21172369, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Label" type="Label" parent="Edge/3/9" unique_id=926780551]
+layout_mode = 0
+offset_left = 49.0
+offset_top = -37.0
+offset_right = 89.0
+offset_bottom = -14.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0m"
+
+[node name="Panel" type="Panel" parent="." unique_id=1055462141]
+offset_left = 15.0
+offset_top = 308.0
+offset_right = 282.0
+offset_bottom = 633.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7rqgy")
+
+[node name="InfoText" type="RichTextLabel" parent="Panel" unique_id=770020504]
+layout_mode = 0
+anchor_left = 0.08988764
+anchor_top = 0.09538461
+anchor_right = 0.8988764
+anchor_bottom = 0.9107692
+theme_override_colors/default_color = Color(0.2946406, 0.29464063, 0.2946406, 1)
+theme_override_font_sizes/normal_font_size = 23
+text = "123
+
+
+
+
+
+
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel2" type="Panel" parent="." unique_id=1139091852]
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 282.0
+offset_bottom = 288.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7rqgy")
+
+[node name="StartPosLineEdit" type="LineEdit" parent="Panel2" unique_id=1919305146]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 41.0
+offset_right = 233.0
+offset_bottom = 79.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_q68mp")
+theme_override_styles/focus = SubResource("StyleBoxFlat_q68mp")
+placeholder_text = "起点 (地点名称)"
+
+[node name="Label" type="Label" parent="Panel2/StartPosLineEdit" unique_id=1696003154]
+visible = false
+layout_mode = 0
+offset_top = -23.0
+offset_right = 74.0
+theme_override_colors/font_color = Color(0.9538278, 0, 0.13854828, 1)
+text = "非法输入，请重新输入"
+
+[node name="EndPosLineEdit" type="LineEdit" parent="Panel2" unique_id=511379810]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 127.0
+offset_right = 233.0
+offset_bottom = 165.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_f140w")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f140w")
+placeholder_text = "终点 (地点名称)"
+
+[node name="Label" type="Label" parent="Panel2/EndPosLineEdit" unique_id=1278076929]
+visible = false
+layout_mode = 0
+offset_top = -23.0
+offset_right = 74.0
+theme_override_colors/font_color = Color(0.9538278, 0, 0.13854828, 1)
+text = "非法输入，请重新输入"
+
+[node name="SearchButton" type="TextureButton" parent="Panel2" unique_id=1035685661]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 205.0
+offset_right = 152.0
+offset_bottom = 256.0
+texture_normal = ExtResource("4_qxria")
+texture_pressed = ExtResource("4_qxria")
+texture_hover = ExtResource("4_qxria")
+texture_disabled = SubResource("CompressedTexture2D_y4jh7")
+texture_focused = SubResource("CompressedTexture2D_y4jh7")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="StartPin" type="TextureRect" parent="." unique_id=743031790]
+offset_left = -21.0
+offset_top = 27.000002
+offset_right = -21.0
+offset_bottom = 27.000002
+scale = Vector2(0.16750018, 0.16750018)
+texture = ExtResource("3_nhkr4")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="EndPin" type="TextureRect" parent="." unique_id=1670609197]
+offset_left = -21.0
+offset_top = 65.0
+offset_right = -21.0
+offset_bottom = 65.0
+scale = Vector2(0.16750018, 0.16750018)
+texture = ExtResource("3_nhkr4")
+expand_mode = 1
+stretch_mode = 3

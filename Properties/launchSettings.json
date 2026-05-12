@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Console": {
+      "commandName": "Executable",
+      "executablePath": "D:\\Godot\\GODOT\\Godot_v4.6.2-stable_mono_win64\\Godot_v4.6.2-stable_mono_win64_console.exe",
+      "commandLineArgs": "--ptah . --verbose",
+      "workingDirectory": ".",
+      "sqlDebugging": false,
+      "nativeDebugging": true
+    }
+  }
+}
