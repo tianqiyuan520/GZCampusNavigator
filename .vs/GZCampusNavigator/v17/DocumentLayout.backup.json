@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Godot\\Project\\GZCampusNavigator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|d:\\godot\\project\\gzcampusnavigator\\src\\dijkstranavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|solutionrelative:src\\dijkstranavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|d:\\godot\\project\\gzcampusnavigator\\models\\edge.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|solutionrelative:models\\edge.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|d:\\godot\\project\\gzcampusnavigator\\models\\location.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|solutionrelative:models\\location.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|d:\\godot\\project\\gzcampusnavigator\\src\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|solutionrelative:src\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|d:\\godot\\project\\gzcampusnavigator\\src\\maploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|solutionrelative:src\\maploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|d:\\godot\\project\\gzcampusnavigator\\src\\scripts\\mainscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD7104AA-1BEB-4869-827E-BBA3A5ED2CFB}|GZCampusNavigator.csproj|solutionrelative:src\\scripts\\mainscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{da7e21aa-da94-452d-8aa1-d1b23f73f576}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:283709:0:{1a46fd64-28d5-0019-8eb3-17a02d419b53}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{b9f91511-5ca5-40ec-9726-f3e3a7e534e2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DijkstraNavigation.cs",
+              "DocumentMoniker": "D:\\Godot\\Project\\GZCampusNavigator\\Src\\DijkstraNavigation.cs",
+              "RelativeDocumentMoniker": "Src\\DijkstraNavigation.cs",
+              "ToolTip": "D:\\Godot\\Project\\GZCampusNavigator\\Src\\DijkstraNavigation.cs",
+              "RelativeToolTip": "Src\\DijkstraNavigation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T08:38:30.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edge.txt",
+              "DocumentMoniker": "D:\\Godot\\Project\\GZCampusNavigator\\Models\\Edge.txt",
+              "RelativeDocumentMoniker": "Models\\Edge.txt",
+              "ToolTip": "D:\\Godot\\Project\\GZCampusNavigator\\Models\\Edge.txt",
+              "RelativeToolTip": "Models\\Edge.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-12T08:31:50.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Location.txt",
+              "DocumentMoniker": "D:\\Godot\\Project\\GZCampusNavigator\\Models\\Location.txt",
+              "RelativeDocumentMoniker": "Models\\Location.txt",
+              "ToolTip": "D:\\Godot\\Project\\GZCampusNavigator\\Models\\Location.txt",
+              "RelativeToolTip": "Models\\Location.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-12T08:30:49.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MapManager.cs",
+              "DocumentMoniker": "D:\\Godot\\Project\\GZCampusNavigator\\Src\\MapManager.cs",
+              "RelativeDocumentMoniker": "Src\\MapManager.cs",
+              "ToolTip": "D:\\Godot\\Project\\GZCampusNavigator\\Src\\MapManager.cs",
+              "RelativeToolTip": "Src\\MapManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T04:51:39.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MapLoader.cs",
+              "DocumentMoniker": "D:\\Godot\\Project\\GZCampusNavigator\\Src\\MapLoader.cs",
+              "RelativeDocumentMoniker": "Src\\MapLoader.cs",
+              "ToolTip": "D:\\Godot\\Project\\GZCampusNavigator\\Src\\MapLoader.cs",
+              "RelativeToolTip": "Src\\MapLoader.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAASwFIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T04:51:35.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainScene.cs",
+              "DocumentMoniker": "D:\\Godot\\Project\\GZCampusNavigator\\Src\\Scripts\\MainScene.cs",
+              "RelativeDocumentMoniker": "Src\\Scripts\\MainScene.cs",
+              "ToolTip": "D:\\Godot\\Project\\GZCampusNavigator\\Src\\Scripts\\MainScene.cs",
+              "RelativeToolTip": "Src\\Scripts\\MainScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T04:51:32.888Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
